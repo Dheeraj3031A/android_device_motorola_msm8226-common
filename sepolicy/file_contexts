@@ -9,6 +9,9 @@
 # Camera
 /data/cam_socket([0-9])+                                    u:object_r:camera_socket:s0
 
+# Gatekeeper
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software			u:object_r:hal_gatekeeper_default_exec:s0
+
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.0-service\.moto8226                          u:object_r:hal_power_default_exec:s0
 
