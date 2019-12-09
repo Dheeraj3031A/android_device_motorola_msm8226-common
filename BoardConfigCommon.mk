@@ -129,9 +129,6 @@ DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
-# Keymaster
-TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
-
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
