@@ -334,7 +334,8 @@ PRODUCT_PACKAGES += \
 
 # Ril
 PRODUCT_PACKAGES += \
-    libqsap_shim
+    libqsap_shim \
+    libcutils_shim 
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \

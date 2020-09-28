@@ -176,6 +176,7 @@ BOARD_SEPOLICY_DIRS += \
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib/libril-qc-qmi-1.so|libcutils_shim.so \
     /system/vendor/bin/thermal-engine|libshims_thermal.so \
     /system/vendor/bin/mpdecision|libshims_atomic.so \
     /system/lib/hw/camera.vendor.msm8226.so|libshims_camera.so \
