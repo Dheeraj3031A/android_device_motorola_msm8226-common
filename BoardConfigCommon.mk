@@ -141,6 +141,9 @@ JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(VENDOR_PATH)/lineagehw|**/*.jav
 # Memory
 MALLOC_SVELTE := true
 
+# memfd
+TARGET_HAS_MEMFD_BACKPORT := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 
