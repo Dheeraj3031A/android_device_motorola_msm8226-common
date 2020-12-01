@@ -102,6 +102,9 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_NO_CHARGER_LED := true
 
+# Dedupe VNDK libraries with identical core variants.
+TARGET_VNDK_USE_CORE_VARIANT := true
+
 # Display
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 TARGET_USES_ION := true
