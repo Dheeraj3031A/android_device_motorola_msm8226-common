@@ -152,6 +152,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hdrhax:system/vendor/etc/hdrhax
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Dalvik properties
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
@@ -182,7 +186,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    android.hardware.configstore@1.1-service \
     copybit.msm8226 \
     gralloc.msm8226 \
     hwcomposer.msm8226 \
