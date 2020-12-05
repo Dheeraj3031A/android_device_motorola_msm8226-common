@@ -263,8 +263,7 @@ PRODUCT_COPY_FILES += \
 
 # Keystore
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    keystore.msm8226
+    android.hardware.keymaster@3.0-impl 
 
 # Lights
 PRODUCT_PACKAGES += \
