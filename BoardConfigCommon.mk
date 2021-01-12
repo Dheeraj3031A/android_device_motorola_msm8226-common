@@ -124,6 +124,10 @@ SMALLER_FONT_FOOTPRINT := true
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
 
+# Kernel
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
 # Keymaster
 TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
 
