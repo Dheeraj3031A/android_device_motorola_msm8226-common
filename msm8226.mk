@@ -182,6 +182,16 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.start_graphics_allocator_service=true
 
+# DV4A
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/dolby/lib/soundfx/libdseffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdseffect.so \
+	$(LOCAL_PATH)/dolby/lib/soundfx/libv4a_fx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libv4a_fx.so \
+	$(LOCAL_PATH)/dolby/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ac4dec.so \
+	$(LOCAL_PATH)/dolby/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ddpdec.so \
+	$(LOCAL_PATH)/dolby/lib/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstdc++.so \
+	$(LOCAL_PATH)/dolby/etc/permissions/android.dolby.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.dolby.xml \
+	$(LOCAL_PATH)/dolby/etc/ds1-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ds1-default.xml
+
 # Ebtables
 PRODUCT_PACKAGES += \
     ebtables \
