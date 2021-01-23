@@ -123,3 +123,6 @@ ro.disableWifiApFirmwareReload=true
 
 # Play store
 ro.com.google.clientidbase.gmm=android-motorola
+
+#dolby 
+sys.keep_app_1=com.dolby.ds1appUI
