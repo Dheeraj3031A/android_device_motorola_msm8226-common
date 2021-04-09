@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from the proprietary version
--include vendor/motorola/msm8226-common/BoardConfigVendor.mk
+include vendor/motorola/msm8226-common/BoardConfigVendor.mk
 
 VENDOR_PATH := device/motorola/msm8226-common
 
