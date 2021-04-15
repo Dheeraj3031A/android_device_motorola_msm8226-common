@@ -32,6 +32,7 @@ import /vendor/etc/init/hw/init.safailnet.rc
 on early-init
 
     mount debugfs /sys/kernel/debug /sys/kernel/debug mode=755
+    chown system graphics /sys/devices/virtual/graphics/fb0/idle_time
 
     # Set permissions so radio can read
     chmod 0444 /proc/cmdline
