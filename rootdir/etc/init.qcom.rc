@@ -70,8 +70,10 @@ on fs
 on late-fs
     # Start services for bootanim
     start vendor.configstore-hal
+    start servicemanager
     start surfaceflinger
     start bootanim
+    start vendor.hwcomposer-2-1
     start vendor.gralloc-2-0
 
     mount_all /vendor/etc/fstab.qcom --late
