@@ -59,4 +59,6 @@
          before setting power profiles on boot. -->
     <bool name="config_waitForMpctlOnBoot">true</bool>
 
+    <!--Disable LiveDisplay -->
+    <integer name="config_defaultLiveDisplayMode">0</integer>
 </resources>
