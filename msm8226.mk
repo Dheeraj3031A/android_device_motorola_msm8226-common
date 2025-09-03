@@ -109,6 +109,13 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.broadcastradio@1.0-impl
 
+# SoundTrigger
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.3-impl \
+    android.hardware.soundtrigger@2.2-impl \
+    android.hardware.soundtrigger@2.1-impl \
+    android.hardware.soundtrigger@2.0-impl
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
