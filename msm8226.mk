@@ -152,6 +152,10 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     libbt-vendor
 
+# BPF
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.kernel.ebpf.supported=false
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
