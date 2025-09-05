@@ -98,7 +98,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
-    android.hardware.audio.service \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.broadcastradio@1.0-impl
 
