@@ -233,11 +233,15 @@ PRODUCT_COPY_FILES += \
 
 # Set lowram options
 PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.madvise-random=true \
     persist.traced.enable=1 \
+    pm.dexopt.shared=quicken \
+    ro.config.low_ram=true \
     ro.lmk.critical_upgrade=true \
     ro.lmk.upgrade_pressure=40 \
     ro.lmk.downgrade_pressure=60 \
     ro.lmk.kill_heaviest_task=false \
+    ro.lmk.medium=700 \
     ro.statsd.enable=true
 
 # Health
